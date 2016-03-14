@@ -2,7 +2,7 @@
 DomTreSat (DTS) is a static analysis system that takes source code as input and automatically produces path satisfiability reports for paths gathered from a created Dominator Tree structure. It obtains maximal code coverage with minimal human intervention. DomTreSat creates a dominator tree of user-controlled variables, then outputs constraints and operations placed on their values to be fed to a satisfiability solver. This generates potential points of interest in the program for vulnerability discovery. 
 
 ## Primary Motivation
-The main use of this tool is determine reachability of controllable input to a target in the program, as well as what this input needs to be to get there. The target is automatically set to be the most dominated path of the tree. This helps an auditor identify a path to vulnerable code through a series of checks like so:
+The main use of this tool is determine reachability of controllable input to a target in the program, as well as what this input needs to be to get there. The target is automatically set to be the most dominated path of the tree. This helps an auditor identify a path to vulnerable code through a series of checks like the diagram below. In programs like these, it is the most-dominated path that we want to buid and analyze the Use-Define Chain for.
 
 ```
      INPUT
@@ -15,8 +15,6 @@ The main use of this tool is determine reachability of controllable input to a t
              /   |
            FAIL  VULNERABILITY
 ```
-
-In these type of programs it is the most dominated path that we want to build and analyse the Use-Define Chain for.
 
 ## Analysis Theory
 ### Use of a Dominator Tree
