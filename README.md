@@ -23,26 +23,26 @@ A) if it is user controllable,
 and 
 B) what operations are done on this input before it is used in the vulnerability (these become our constraints).  
 
-# LLVM Version Supported
+## LLVM Version Supported
 stable and tested: 3.7.1 
 
-# Quick Setup
-## Builds pass and runs test
+## Quick Setup
+### Builds pass and runs test
 `$./quick_setup.sh`
 
 Creates: LLVMPassBuild.dylib (or .so based on your system)
 
-# Developer Builds
-## Incremental re-build of modified pass
+## Developer Builds
+### Incremental re-build of modified pass
 (if you want to alter or build on the the analysis methods)
 
 `$./partial_build.sh`
 
 
-# Run Tests and Feed to Sat Solver
+## Run Tests and Feed to Sat Solver
 (more tests to follow as the tool grows)
 
-## Base case test
+### Base case test
 
 Tests for tracing definitions of variables (their Use-Def chains) through the most dominated path
 
@@ -53,7 +53,7 @@ To run this test with z3 for generating input to satisfy target path:
 
 `$./complete_test_base_case.sh`
 
-## Addition operator test
+### Addition operator test
 
 Tests for tracing definitions of variables (their Use-Def chains) through the most dominated path, where the Use-Def Chain now contains re-definitions after addition operations are applied to the variable.
 
@@ -64,7 +64,7 @@ To run pass and z3 for generating input to satisfy target path:
 
 `$./complete_test_addition.sh`
 
-## Subtraction operator test
+### Subtraction operator test
 
 Tests for tracing definitions of variables (their Use-Def chains) through the most dominated path, where the Use-Def Chain now contains re-definitions after subtraction operations are applied to the variable.
 
@@ -75,7 +75,7 @@ To run pass and z3 for generating input to satisfy target path:
 
 `$./complete_test_subtraction.sh`
 
-## Xor operator test
+### Xor operator test
 
 Tests for tracing definitions of variables (their Use-Def chains) through the most dominated path, where the Use-Def Chain now contains re-definitions after xor operations are applied to the variable.
 
