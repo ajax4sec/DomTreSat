@@ -4,6 +4,18 @@ DomTreSat (DTS) is a static analysis system that takes source code as input and 
 ## Primary Motivation
 The main use of this tool is determine reachability of controllable input to a target in the program, as well as what this input needs to be to get there. The target is automatically set to be the most dominated path of the tree. This helps an auditor identify a path to vulnerable code through a series of checks like so:
 
+```
+     INPUT
+        \
+       CHECK
+       /   |
+     FAIL  CHECK
+          /   |
+        FAIL  CHECK
+             /   |
+           FAIL  VULNERABILITY
+```
+
 ![Alt text](./887b255301.png?raw=true "example target binary structure")
 
 In these type of programs it is the most dominated path that we want to build and analyse the Use-Define Chain for.
