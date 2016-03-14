@@ -1,0 +1,84 @@
+18,20c18,20
+< add_llvm_tool_subdirectory(llvm-as)
+< add_llvm_tool_subdirectory(llvm-dis)
+< add_llvm_tool_subdirectory(llvm-mc)
+---
+> #add_llvm_tool_subdirectory(llvm-as)
+> #add_llvm_tool_subdirectory(llvm-dis)
+> #add_llvm_tool_subdirectory(llvm-mc)
+23,25c23,25
+< add_llvm_tool_subdirectory(llvm-ar)
+< add_llvm_tool_subdirectory(llvm-nm)
+< add_llvm_tool_subdirectory(llvm-size)
+---
+> #add_llvm_tool_subdirectory(llvm-ar)
+> #add_llvm_tool_subdirectory(llvm-nm)
+> #add_llvm_tool_subdirectory(llvm-size)
+27,28c27,28
+< add_llvm_tool_subdirectory(llvm-cov)
+< add_llvm_tool_subdirectory(llvm-profdata)
+---
+> #add_llvm_tool_subdirectory(llvm-cov)
+> #add_llvm_tool_subdirectory(llvm-profdata)
+32,40c32,40
+< add_llvm_tool_subdirectory(llvm-extract)
+< add_llvm_tool_subdirectory(llvm-diff)
+< add_llvm_tool_subdirectory(macho-dump)
+< add_llvm_tool_subdirectory(llvm-objdump)
+< add_llvm_tool_subdirectory(llvm-readobj)
+< add_llvm_tool_subdirectory(llvm-rtdyld)
+< add_llvm_tool_subdirectory(llvm-dwarfdump)
+< add_llvm_tool_subdirectory(dsymutil)
+< add_llvm_tool_subdirectory(llvm-vtabledump)
+---
+> #add_llvm_tool_subdirectory(llvm-extract)
+> #add_llvm_tool_subdirectory(llvm-diff)
+> #add_llvm_tool_subdirectory(macho-dump)
+> #add_llvm_tool_subdirectory(llvm-objdump)
+> #add_llvm_tool_subdirectory(llvm-readobj)
+> #add_llvm_tool_subdirectory(llvm-rtdyld)
+> #add_llvm_tool_subdirectory(llvm-dwarfdump)
+> #add_llvm_tool_subdirectory(dsymutil)
+> #add_llvm_tool_subdirectory(llvm-vtabledump)
+47,51c47,51
+< add_llvm_tool_subdirectory(bugpoint)
+< add_llvm_tool_subdirectory(bugpoint-passes)
+< add_llvm_tool_subdirectory(llvm-bcanalyzer)
+< add_llvm_tool_subdirectory(llvm-stress)
+< add_llvm_tool_subdirectory(llvm-mcmarkup)
+---
+> #add_llvm_tool_subdirectory(bugpoint)
+> #add_llvm_tool_subdirectory(bugpoint-passes)
+> #add_llvm_tool_subdirectory(llvm-bcanalyzer)
+> #add_llvm_tool_subdirectory(llvm-stress)
+> #add_llvm_tool_subdirectory(llvm-mcmarkup)
+53c53
+< add_llvm_tool_subdirectory(verify-uselistorder)
+---
+> #add_llvm_tool_subdirectory(verify-uselistorder)
+55c55
+< add_llvm_tool_subdirectory(llvm-symbolizer)
+---
+> #add_llvm_tool_subdirectory(llvm-symbolizer)
+57c57
+< add_llvm_tool_subdirectory(llvm-c-test)
+---
+> #add_llvm_tool_subdirectory(llvm-c-test)
+59,60c59,60
+< add_llvm_tool_subdirectory(obj2yaml)
+< add_llvm_tool_subdirectory(yaml2obj)
+---
+> #add_llvm_tool_subdirectory(obj2yaml)
+> #add_llvm_tool_subdirectory(yaml2obj)
+62c62
+< add_llvm_tool_subdirectory(llvm-go)
+---
+> #add_llvm_tool_subdirectory(llvm-go)
+72c72
+< add_llvm_tool_subdirectory(gold)
+---
+> #add_llvm_tool_subdirectory(gold)
+83c83
+<   add_llvm_implicit_external_projects()
+---
+>   #  add_llvm_implicit_external_projects()

@@ -1,0 +1,16 @@
+64a65,67
+> // initializeDoTreAnalysis - Initializes all passes linked into the Dominator Tree Satisfiability library.
+> void initializeDoTreAnalysis(PassRegistry&);
+> 
+289a293,303
+> 
+> 
+> 
+> // Trail of Bits Dominator Tree Satisfiability Analizer
+> void initializeDoTrePass(PassRegistry&);
+> //void initializePredicateInserterPass(PassRegistry&);
+> //void initializeCodeDiffuserPass(PassRegistry&);
+> //void initializeCodeDiffuserPrepPass(PassRegistry&);
+> //void initializeJailbreakDetectionPass(PassRegistry&);
+> //
+> //
