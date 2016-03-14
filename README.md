@@ -16,8 +16,6 @@ The main use of this tool is determine reachability of controllable input to a t
            FAIL  VULNERABILITY
 ```
 
-![Alt text](./887b255301.png?raw=true "example target binary structure")
-
 In these type of programs it is the most dominated path that we want to build and analyse the Use-Define Chain for.
 
 ## Analysis Theory
