@@ -47,12 +47,12 @@ Creates: LLVMPassBuild.dylib (or .so based on your system)
 
 Tests for tracing definitions of variables (their Use-Def chains) through the most dominated path
 
-`$./test_base_case.sh`$.
+`$./test_base_case.sh`
 
 
 To run this test with z3 for generating input to satisfy target path:
 
-`$./complete_test_base_case.sh`$.
+`$./complete_test_base_case.sh`
 
 ------------------------------------------------------
 
@@ -60,7 +60,7 @@ To run this test with z3 for generating input to satisfy target path:
 
 Tests for tracing definitions of variables (their Use-Def chains) through the most dominated path, where the Use-Def Chain now contains re-definitions after addition operations are applied to the variable.
 
-`$./test_addition.sh`$.
+`$./test_addition.sh`
 
 
 To run pass and z3 for generating input to satisfy target path:
@@ -78,7 +78,7 @@ Tests for tracing definitions of variables (their Use-Def chains) through the mo
 
 To run pass and z3 for generating input to satisfy target path:
 
-`$./complete_test_subtraction.sh`$.
+`$./complete_test_subtraction.sh`
 
 ------------------------------------------------------
 
@@ -91,13 +91,14 @@ Tests for tracing definitions of variables (their Use-Def chains) through the mo
 
 To run pass and z3 for generating input to satisfy target path:
 
-`$./complete_test_xor.sh`$.
+`$./complete_test_xor.sh`
 
 ------------------------------------------------------
 
 # Expected Output For Addition Operator Run
 
-```$./complete_test_base_case.sh
+```
+$./complete_test_base_case.sh
 
 
 ...Starting LLVM to Z3 Solver...
