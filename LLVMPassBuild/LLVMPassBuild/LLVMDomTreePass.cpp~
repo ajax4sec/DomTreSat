@@ -46,7 +46,7 @@ namespace {
 		
 		virtual const char *getPassName() const override
 		{
-			return "Create Dominator Tree and Associated Use-Define Chain Analysis";
+			return "Remove All Obfuscator Symbols";
 		}
 		
 		virtual bool runOnFunction(Function &F) 
