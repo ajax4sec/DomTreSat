@@ -27,7 +27,13 @@ This tool relies on pulling these data structures from the Most Dominated Path w
 
 ## Building
 
-DomTreSat has been tested on LLVM 3.7.1. The `$./quick_setup.sh` helper script will build the tool and run tests. It creates an `LLVMPassBuild.dylib` (or `.so`). If you want to alter or build on the analysis methods, use `$./partial_build.sh` for an incremental re-build.
+DomTreSat has been tested on LLVM 3.7.1.
+
+1. Install dependencies
+ * OS X: `brew install z3`
+ * Linux/Windows: follow instructions on [Z3Prover/z3](https://github.com/Z3Prover/z3)
+2. `$./quick_setup.sh` to build and run tests
+3. `$./partial_build.sh` to perform an incremental rebuild after altering analysis methods
 
 ## Usage
 This section describes how to run tests and feed them to the SAT solver.
