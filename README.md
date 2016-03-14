@@ -17,10 +17,10 @@ The main use of this tool is determine reachability of controllable input to a t
 ```
 
 ## Analysis Theory
-### Use of a Dominator Tree
+### Dominator Trees
 This tool defaults to analyzing the most dominated paths first. These paths can be described as those with variables that are acted upon the most. This can be changed based on need and a quick recompilation script is in place to generate altered libraries. 
 
-### Use of Use-Define Chain Analysis
+### Use-Define Chains
 Use-Define Chains (Use-Def) are a data structure that consists of a use of a variable, and all the definitions of that variable that can reach that use without any other intervening definitions.
 
 This tool relies on pulling these data structures from the Most Dominated Path which is found through the Dominator Tree created. The basic idea is that given a targeted Use, i.e. the use of a variable to either get to or cause a vulnerability, we can trace this variable up through all of its (re-)definitions and determine A) if it is user controllable, and B) what operations are done on this input before it is used in the vulnerability (these become our constraints).  
