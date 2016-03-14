@@ -27,7 +27,7 @@ stable and tested: 3.7.1
 
 # Quick Setup
 # Builds pass and runs test
-./quick_setup.sh
+`$./quick_setup.sh`
 
 Creates: LLVMPassBuild.dylib (or .so based on your system)
 
@@ -35,7 +35,7 @@ Creates: LLVMPassBuild.dylib (or .so based on your system)
 # Incremental re-build of modified pass
 (if you want to alter or build on the the analysis methods)
 
-./partial_build.sh
+`$./partial_build.sh`
 
 
 # Run Tests and Feed to Sat Solver
@@ -47,12 +47,12 @@ Creates: LLVMPassBuild.dylib (or .so based on your system)
 
 Tests for tracing definitions of variables (their Use-Def chains) through the most dominated path
 
-./test_base_case.sh 
+`$./test_base_case.sh`$.
 
 
 To run this test with z3 for generating input to satisfy target path:
 
-./complete_test_base_case.sh 
+`$./complete_test_base_case.sh`$.
 
 ------------------------------------------------------
 
@@ -60,12 +60,12 @@ To run this test with z3 for generating input to satisfy target path:
 
 Tests for tracing definitions of variables (their Use-Def chains) through the most dominated path, where the Use-Def Chain now contains re-definitions after addition operations are applied to the variable.
 
-./test_addition.sh 
+`$./test_addition.sh`$.
 
 
 To run pass and z3 for generating input to satisfy target path:
 
-./complete_test_addition.sh 
+`$./complete_test_addition.sh`
 
 ------------------------------------------------------
 
@@ -73,12 +73,12 @@ To run pass and z3 for generating input to satisfy target path:
 
 Tests for tracing definitions of variables (their Use-Def chains) through the most dominated path, where the Use-Def Chain now contains re-definitions after subtraction operations are applied to the variable.
 
-./test_subtraction.sh 
+`$./test_subtraction.sh`
 
 
 To run pass and z3 for generating input to satisfy target path:
 
-./complete_test_subtraction.sh 
+`$./complete_test_subtraction.sh`$.
 
 ------------------------------------------------------
 
@@ -86,18 +86,18 @@ To run pass and z3 for generating input to satisfy target path:
 
 Tests for tracing definitions of variables (their Use-Def chains) through the most dominated path, where the Use-Def Chain now contains re-definitions after xor operations are applied to the variable.
 
-./test_xor.sh 
+`$./test_xor.sh`
 
 
 To run pass and z3 for generating input to satisfy target path:
 
-./complete_test_xor.sh 
+`$./complete_test_xor.sh`$.
 
 ------------------------------------------------------
 
 # Expected Output For Addition Operator Run
 
-$ ./complete_test_base_case.sh
+```$./complete_test_base_case.sh
 
 
 ...Starting LLVM to Z3 Solver...
@@ -336,4 +336,4 @@ EDCB
 
 
 ...Solver Finished...
-
+```
